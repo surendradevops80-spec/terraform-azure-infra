@@ -83,7 +83,7 @@ resource "azurerm_public_ip" "sky_public_ip" {
   name                = each.value.name
   resource_group_name = azurerm_resource_group.sky_rg[each.value.resource_group].name
   location            = azurerm_resource_group.sky_rg[each.value.resource_group].location
-  allocation_method   =  each.value.allocation_method
+  allocation_method   = each.value.allocation_method
   sku                 = "Standard"
 }
 
