@@ -1,11 +1,9 @@
-cat > .github/workflows/terraform.yml <<'EOF'
 name: Terraform CI
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - main
+  push: {}
+  pull_request: {}
 
 jobs:
   terraform:
@@ -29,4 +27,3 @@ jobs:
 
       - name: Terraform Plan
         run: terraform plan -input=false
-EOF
