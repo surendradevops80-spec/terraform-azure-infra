@@ -124,13 +124,15 @@ subnet_nsg_association = {
 public_ip = {
 
   pip1 = {
-    name           = "pip-dev"
-    resource_group = "rg1"
+    name               = "pip-dev"
+    resource_group     = "rg1"
+    allocation_method  = "Static"
   }
 
   pip2 = {
-    name           = "pip-prod"
-    resource_group = "rg2"
+    name               = "pip-prod"
+    resource_group     = "rg2"
+    allocation_method  = "Static"
   }
 }
 
